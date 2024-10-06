@@ -1,4 +1,5 @@
-﻿using CRM.Infastructure;
+﻿using CRM.Application;
+using CRM.Infastructure;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 

@@ -1,5 +1,6 @@
 ﻿using CRM.Application;
 using CRM.Domain;
+using CRM.Infastructure;
 using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -11,12 +12,10 @@ namespace CRM.API.Controllers
     public class WebhookController : ControllerBase
     {
         private readonly IMediator _mediator;
-        private readonly IPublishEndpoint _publisher;
 
-        public WebhookController(IMediator mediator, IPublishEndpoint publisher)
+        public WebhookController(IMediator mediator)
         {
             _mediator = mediator;
-            _publisher = publisher;
         }
 
         /// <summary>
@@ -33,18 +32,6 @@ namespace CRM.API.Controllers
         }
 
         /// <summary>
-        /// view the company's products and standard prices (these are internally exposed via the 'PIM API')
-        /// </summary>
-        /// <returns></returns>
-        [HttpGet]
-        [Route("products")]
-        public async Task<IActionResult> GetProducts()
-        {
-            var rs = await _mediator.Send(new GetProductsCommand());
-            return Ok(rs);
-        }
-
-        /// <summary>
         /// converted from a Lead to Customer
         /// </summary>
         /// <returns></returns>
@@ -52,11 +39,25 @@ namespace CRM.API.Controllers
         [Route("lead/conversion")]
         public async Task<IActionResult> ConvertLeadToCustomer(LeadConvertedDTO leadConverted)
         {
-            await _publisher.Publish(new LeadConvertedCommand()
+            await _mediator.Send(new LeadConvertedCommand()
             {
                 ConvertedDate = leadConverted.ConvertedDate,
                 CustomerId = leadConverted.CustomerId,
                 LeadId = leadConverted.LeadId,
+            });
+            return Ok();
+        }
+
+        [HttpPost]
+        [Route("pricing-agreement")]
+        public async Task<IActionResult> RegisterPricingAgreement([FromBody] PricingAgreementDTO pricingAgreement)
+        {
+            await _mediator.Send(new PricingAgreementCommand()
+            {
+                CustomerCode = pricingAgreement.CustomerCode,
+                EffectiveDate = pricingAgreement.EffectiveDate,
+                Price = pricingAgreement.Price,
+                ProductId = pricingAgreement.ProductId
             });
             return Ok();
         }
