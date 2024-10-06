@@ -9,19 +9,13 @@
 # About this project
 This project demonstrates the integration of a CRM (Customer Relationship Management) system into the Esoft system landscape. 
 But due to lack of condition in creating Azure service bus, I could only demonstrate the behavior of the MassTransit using the In-memory transport, and I also use InMemoryDatabase to mock the database.
+This is my first time using MassTransit and MediatR, so the project structure might not be optimal in some areas. I would greatly appreciate any feedback from you.
 
 ## Technologies Used
 - **ASP.NET Core 8**: The core framework used for building the API.
 - **MassTransit**: For event-driven communication between services.
 - **MediatR**: For service requests and handlers.
 - **EntityFramwork Core**: For storing and retrieving data.
-
-## System Architecture
-I choose the clean achitechture for the CRM.API project. The following components are used:
-- **CRM.API**: contains controllers and middlewares.
-- **CRM.Application**: DTOs use for process data, MassTransit and MediatR to communicate between services. 
-- **CRM.Domain**: The core object of the application.
-- **CRM.Infastructure**: Implement data access logic, integration with extenal service (using HttpClient)
 
 ## Solution for the Assignment 
 
