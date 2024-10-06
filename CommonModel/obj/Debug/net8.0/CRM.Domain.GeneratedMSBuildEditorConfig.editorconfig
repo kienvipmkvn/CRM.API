@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CRM.Domain
-build_property.ProjectDir = D:\work\esoft-test\CommonModel\
+build_property.ProjectDir = D:\work\esoft-assignment\CRM.API\CommonModel\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

@@ -566,11 +566,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\esoft-test\\CommonModel\\CRM.Domain.csproj",
+      "projectUniqueName": "D:\\work\\esoft-assignment\\CRM.API\\CommonModel\\CRM.Domain.csproj",
       "projectName": "CRM.Domain",
-      "projectPath": "D:\\work\\esoft-test\\CommonModel\\CRM.Domain.csproj",
+      "projectPath": "D:\\work\\esoft-assignment\\CRM.API\\CommonModel\\CRM.Domain.csproj",
       "packagesPath": "C:\\Users\\kienv\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\esoft-test\\CommonModel\\obj\\",
+      "outputPath": "D:\\work\\esoft-assignment\\CRM.API\\CommonModel\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kienv\\AppData\\Roaming\\NuGet\\NuGet.Config",

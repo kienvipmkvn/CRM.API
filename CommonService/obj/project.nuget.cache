@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W6srvGAmQC4=",
+  "dgSpecHash": "gMEsdwavWHs=",
   "success": true,
-  "projectFilePath": "D:\\work\\esoft-test\\CommonService\\CRM.Infastructure.csproj",
+  "projectFilePath": "D:\\work\\esoft-assignment\\CRM.API\\CommonService\\CRM.Infastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kienv\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.8\\microsoft.entityframeworkcore.8.0.8.nupkg.sha512",
     "C:\\Users\\kienv\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.8\\microsoft.entityframeworkcore.abstractions.8.0.8.nupkg.sha512",

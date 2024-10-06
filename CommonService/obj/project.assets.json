@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\work\\esoft-test\\CommonService\\CRM.Infastructure.csproj",
+      "projectUniqueName": "D:\\work\\esoft-assignment\\CRM.API\\CommonService\\CRM.Infastructure.csproj",
       "projectName": "CRM.Infastructure",
-      "projectPath": "D:\\work\\esoft-test\\CommonService\\CRM.Infastructure.csproj",
+      "projectPath": "D:\\work\\esoft-assignment\\CRM.API\\CommonService\\CRM.Infastructure.csproj",
       "packagesPath": "C:\\Users\\kienv\\.nuget\\packages\\",
-      "outputPath": "D:\\work\\esoft-test\\CommonService\\obj\\",
+      "outputPath": "D:\\work\\esoft-assignment\\CRM.API\\CommonService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\kienv\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -656,8 +656,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\work\\esoft-test\\CommonModel\\CRM.Domain.csproj": {
-              "projectPath": "D:\\work\\esoft-test\\CommonModel\\CRM.Domain.csproj"
+            "D:\\work\\esoft-assignment\\CRM.API\\CommonModel\\CRM.Domain.csproj": {
+              "projectPath": "D:\\work\\esoft-assignment\\CRM.API\\CommonModel\\CRM.Domain.csproj"
             }
           }
         }
