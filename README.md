@@ -32,14 +32,14 @@ The external CRM system can register new (potential) customers in Esoft's system
 The CRM system can query product and pricing information through the CRM API. The data is retrieved from the internal **PIM API**, ensuring that up-to-date pricing and product information is available to the CRM system.
 
 ### 3. Creating Pricing Agreements
-As the requirement, I can assume that we can create the pricing agreement from both the CRM system and from the PIM API, so there will be 2 things I have to do here: receive pricing agreement from CRM system through the webhook, and receive it from PIM through MassTransit.
+As the requirement, I can assume that we can create the pricing agreement from both the CRM system and from the PIM API, so there will be 2 things I have to do here: first is receive pricing agreement from CRM system from webhook, publish it through MassTransit so the entire Esoft system can see it; and the second thing is receive the pricing agreement created from PIM through MassTransit.
 Since I do not have the real PIM API, I have to create a PIM controller in the CRM API to mock the behavior of the real PIM API (publish a command when a pricing agreement is created so the CRM API can comsume that command).
 
 ### 4. Conversion from Lead to Customer
 When a lead is converted to a customer in CRM system, the CRM API receive a webhook notification, then publish a LeadConvertedCommand to the Esoft internal system.
 
 ## Endpoints
-You can find all the API to test this CRM.API project in the CRM.API.http file
+You can find all the API to test this CRM.API project in the **CRM.API.http** file
 
 ## How to Run
 
