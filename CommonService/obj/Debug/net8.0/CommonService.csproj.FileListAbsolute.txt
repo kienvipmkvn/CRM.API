@@ -1,0 +1,15 @@
+D:\work\esoft-test\CommonService\bin\Debug\net8.0\CommonService.deps.json
+D:\work\esoft-test\CommonService\bin\Debug\net8.0\CommonService.dll
+D:\work\esoft-test\CommonService\bin\Debug\net8.0\CommonService.pdb
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonService.csproj.AssemblyReference.cache
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonService.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonService.AssemblyInfoInputs.cache
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonService.AssemblyInfo.cs
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonService.csproj.CoreCompileInputs.cache
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonSe.6A692556.Up2Date
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonService.dll
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\refint\CommonService.dll
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\CommonService.pdb
+D:\work\esoft-test\CommonService\obj\Debug\net8.0\ref\CommonService.dll
+D:\work\esoft-test\CommonService\bin\Debug\net8.0\CRM.Domain.dll
+D:\work\esoft-test\CommonService\bin\Debug\net8.0\CRM.Domain.pdb

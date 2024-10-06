@@ -1,0 +1,17 @@
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Application.csproj.AssemblyReference.cache
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Application.AssemblyInfoInputs.cache
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Application.AssemblyInfo.cs
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Application.csproj.CoreCompileInputs.cache
+D:\work\esoft-test\CRM.Application\bin\Debug\net8.0\CRM.Application.deps.json
+D:\work\esoft-test\CRM.Application\bin\Debug\net8.0\CRM.Application.dll
+D:\work\esoft-test\CRM.Application\bin\Debug\net8.0\CRM.Application.pdb
+D:\work\esoft-test\CRM.Application\bin\Debug\net8.0\CRM.Domain.dll
+D:\work\esoft-test\CRM.Application\bin\Debug\net8.0\CRM.Infastructure.dll
+D:\work\esoft-test\CRM.Application\bin\Debug\net8.0\CRM.Domain.pdb
+D:\work\esoft-test\CRM.Application\bin\Debug\net8.0\CRM.Infastructure.pdb
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Appl.F64C2975.Up2Date
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Application.dll
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\refint\CRM.Application.dll
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\CRM.Application.pdb
+D:\work\esoft-test\CRM.Application\obj\Debug\net8.0\ref\CRM.Application.dll

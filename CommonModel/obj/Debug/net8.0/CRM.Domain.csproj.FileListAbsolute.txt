@@ -1,0 +1,12 @@
+D:\work\esoft-test\CommonModel\bin\Debug\net8.0\CRM.Domain.deps.json
+D:\work\esoft-test\CommonModel\bin\Debug\net8.0\CRM.Domain.dll
+D:\work\esoft-test\CommonModel\bin\Debug\net8.0\CRM.Domain.pdb
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\CRM.Domain.csproj.AssemblyReference.cache
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\CRM.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\CRM.Domain.AssemblyInfoInputs.cache
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\CRM.Domain.AssemblyInfo.cs
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\CRM.Domain.csproj.CoreCompileInputs.cache
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\CRM.Domain.dll
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\refint\CRM.Domain.dll
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\CRM.Domain.pdb
+D:\work\esoft-test\CommonModel\obj\Debug\net8.0\ref\CRM.Domain.dll

@@ -1,0 +1,17 @@
+D:\work\esoft-test\CRMMediatR\bin\Debug\net8.0\CRMMediatR.deps.json
+D:\work\esoft-test\CRMMediatR\bin\Debug\net8.0\CRMMediatR.dll
+D:\work\esoft-test\CRMMediatR\bin\Debug\net8.0\CRMMediatR.pdb
+D:\work\esoft-test\CRMMediatR\bin\Debug\net8.0\CommonService.dll
+D:\work\esoft-test\CRMMediatR\bin\Debug\net8.0\CommonService.pdb
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.csproj.AssemblyReference.cache
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.GeneratedMSBuildEditorConfig.editorconfig
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.AssemblyInfoInputs.cache
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.AssemblyInfo.cs
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.csproj.CoreCompileInputs.cache
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.csproj.Up2Date
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.dll
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\refint\CRMMediatR.dll
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\CRMMediatR.pdb
+D:\work\esoft-test\CRMMediatR\obj\Debug\net8.0\ref\CRMMediatR.dll
+D:\work\esoft-test\CRMMediatR\bin\Debug\net8.0\CRM.Domain.dll
+D:\work\esoft-test\CRMMediatR\bin\Debug\net8.0\CRM.Domain.pdb
