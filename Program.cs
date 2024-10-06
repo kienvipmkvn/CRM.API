@@ -1,9 +1,8 @@
-
-using CommonService;
-using CRMDbContext;
+using CRM.API.Middleware;
+using CRM.Application;
+using CRM.Infastructure;
 using MassTransit;
 using Microsoft.EntityFrameworkCore;
-using System.Net.Http;
 
 namespace CRM.API
 {
@@ -15,20 +14,22 @@ namespace CRM.API
 
             // Add services to the container.
 
-            builder.Services.AddControllers();
+            builder.Services.AddControllers()
+                .AddJsonOptions(opt => opt.JsonSerializerOptions.PropertyNamingPolicy = null); ;
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
-            builder.Services.AddDbContext<CRMContext>(options =>
+            builder.Services.AddDbContext<CRMDbContext>(options =>
             {
                 options.UseInMemoryDatabase("CRMDatabaseName");
                 //options.UseSqlServer("connection string");
             });
 
+            //MassTransit
             builder.Services.AddMassTransit(busConfig =>
             {
                 busConfig.SetKebabCaseEndpointNameFormatter();
-                busConfig.AddConsumers(typeof(Program).Assembly);
+                busConfig.AddConsumer(typeof(PricingAgreementConsumer));
                 busConfig.UsingInMemory((context, config) =>
                 {
                     config.ConfigureEndpoints(context);
@@ -36,14 +37,17 @@ namespace CRM.API
                 //busConfig.UsingAzureServiceBus();
             });
 
+            //MediatR
             builder.Services.AddMediatR(config =>
             {
-                config.RegisterServicesFromAssembly(typeof(Program).Assembly);
+                config.RegisterServicesFromAssemblyContaining<CreateCustomerCommand>();
+                config.RegisterServicesFromAssemblyContaining<GetProductsCommand>();
             });
 
+            //DI
             builder.Services.AddSingleton<HttpClient>();
             builder.Services.AddSingleton<IPIMService, PIMService>();
-            builder.Services.AddSingleton<ICRMService, CRMService>();
+            builder.Services.AddSingleton<IExternalCRMService, ExternalCRMService>();
 
             var app = builder.Build();
 
@@ -56,8 +60,7 @@ namespace CRM.API
 
             app.UseHttpsRedirection();
 
-            app.UseAuthorization();
-
+            app.UseMiddleware<AuthenticationMiddleware>();
 
             app.MapControllers();
 

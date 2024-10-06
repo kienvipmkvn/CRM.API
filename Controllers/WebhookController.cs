@@ -1,7 +1,5 @@
-﻿using CommonModel;
-using CommonService;
-using CRM.API.MassTransit;
-using CRM.API.MediatR;
+﻿using CRM.Application;
+using CRM.Domain;
 using MassTransit;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -12,13 +10,11 @@ namespace CRM.API.Controllers
     [Route("api/[controller]")]
     public class WebhookController : ControllerBase
     {
-        private readonly IPIMService _pIMService;
         private readonly IMediator _mediator;
         private readonly IPublishEndpoint _publisher;
 
-        public WebhookController(IPIMService pIMService, IMediator mediator, IPublishEndpoint publisher)
+        public WebhookController(IMediator mediator, IPublishEndpoint publisher)
         {
-            _pIMService = pIMService;
             _mediator = mediator;
             _publisher = publisher;
         }
@@ -26,13 +22,13 @@ namespace CRM.API.Controllers
         /// <summary>
         /// register new (potential) customers into the system via the 'CRM API' through a webhook
         /// </summary>sender
-        /// <param name="lead"></param>
+        /// <param name="customer"></param>
         /// <returns></returns>
         [HttpPost]
-        [Route("lead")]
-        public async Task<IActionResult> RegisterLead([FromBody] CreateLeadCommand lead)
+        [Route("customer")]
+        public async Task<IActionResult> RegisterLead([FromBody] CreateCustomerCommand customer)
         {
-            var id = await _mediator.Send(lead);
+            var id = await _mediator.Send(customer);
             return Ok(id);
         }
 
@@ -44,7 +40,7 @@ namespace CRM.API.Controllers
         [Route("products")]
         public async Task<IActionResult> GetProducts()
         {
-            var rs = await _pIMService.GetProductsAsync();
+            var rs = await _mediator.Send(new GetProductsCommand());
             return Ok(rs);
         }
 
@@ -53,7 +49,7 @@ namespace CRM.API.Controllers
         /// </summary>
         /// <returns></returns>
         [HttpPost]
-        [Route("customer/convert")]
+        [Route("lead/conversion")]
         public async Task<IActionResult> ConvertLeadToCustomer(LeadConvertedDTO leadConverted)
         {
             await _publisher.Publish(new LeadConvertedCommand()

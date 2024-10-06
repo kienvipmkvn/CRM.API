@@ -1,6 +1,36 @@
-@CRM.API_HostAddress = http://localhost:5090
+@CRM.API_HostAddress = http://localhost:5090/api
 
-GET {{CRM.API_HostAddress}}/weatherforecast/
-Accept: application/json
+### register new (potential) customers into the system via the 'CRM API' through a webhook
+POST {{CRM.API_HostAddress}}/Webhook/customer
+Content-Type: application/json
 
-###
+{
+  "Name": "Customer 1",
+  "Email": "zxc@gmail.com",
+  "PhoneNumber": "0123456789"
+}
+
+### view the company's products and standard prices (these are internally exposed via the 'PIM API')
+GET {{CRM.API_HostAddress}}/Webhook/products
+Content-Type: application/json
+
+### register pricing agreements for a new or existing customer in the CRM
+POST {{CRM.API_HostAddress}}/PIM/pricing-agreement
+Content-Type: application/json
+
+{
+  "CustomerCode": "CUSTOMER-0001",
+  "ProductId": 1,
+  "Price": 100.5,
+  "EffectiveDate": "2024-10-06T03:56:01.416Z"
+}
+
+### converted from a Lead to Customer
+POST {{CRM.API_HostAddress}}/Webhook/lead/conversion
+Content-Type: application/json
+
+{
+  "LeadId": 1,
+  "CustomerId": 1,
+  "ConvertedDate": "2024-10-06T03:57:32.315Z"
+}

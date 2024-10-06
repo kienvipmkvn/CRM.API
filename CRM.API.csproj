@@ -21,9 +21,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CommonModel\CommonModel.csproj" />
-    <ProjectReference Include="..\CommonService\CommonService.csproj" />
-    <ProjectReference Include="..\CRMDbContext\CRMDbContext.csproj" />
+    <ProjectReference Include="..\CommonModel\CRM.Domain.csproj" />
+    <ProjectReference Include="..\CommonService\CRM.Infastructure.csproj" />
+    <ProjectReference Include="..\CRM.Application\CRM.Application.csproj" />
   </ItemGroup>
 
 </Project>

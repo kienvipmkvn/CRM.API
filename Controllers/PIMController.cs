@@ -1,9 +1,10 @@
-﻿using CommonModel;
+﻿using CRM.Infastructure;
 using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 
 namespace CRM.API.Controllers
 {
+    [Route("api/[controller]")]
     public class PIMController : ControllerBase
     {
         private readonly IPublishEndpoint _publisher;
